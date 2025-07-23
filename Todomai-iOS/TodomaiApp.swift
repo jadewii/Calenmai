@@ -119,7 +119,7 @@ enum ViewMode: String, CaseIterable, Codable {
         switch id {
         case "today": return "TODAY"
         case "thisWeek": return "THIS WEEK"
-        case "later": return "SOMEDAY"
+        case "later": return "TO-DO LIST"
         case "done": return "CALENDAR"
         default: return id.uppercased()
         }
@@ -246,38 +246,8 @@ class TaskStore: ObservableObject {
         userDefaults.removeObject(forKey: tasksKey)
         userDefaults.synchronize()
         
-        // Add a repeat task for July 16th
-        var july16Task = Task(
-            text: "Weekly Team Meeting",
-            listId: "calendar_2025-07-16_recurring",
-            mode: "life"
-        )
-        july16Task.dueDate = Calendar.current.date(from: DateComponents(year: 2025, month: 7, day: 16))
-        july16Task.isRecurring = true
-        tasks.append(july16Task)
-        
-        // Add a repeat task for today (July 20th)
-        var todayTask = Task(
-            text: "Daily Standup Every Sunday",
-            listId: "calendar_2025-07-20_recurring",
-            mode: "life"
-        )
-        todayTask.dueDate = Calendar.current.date(from: DateComponents(year: 2025, month: 7, day: 20, hour: 9, minute: 30))
-        todayTask.isRecurring = true
-        todayTask.hasReminder = true
-        todayTask.reminderMinutesBefore = 30
-        tasks.append(todayTask)
-        
-        // Add a school task for July 16th
-        var schoolTask = Task(
-            text: "Physics Lab Report Due",
-            listId: "calendar_2025-07-16",
-            mode: "school"
-        )
-        schoolTask.dueDate = Calendar.current.date(from: DateComponents(year: 2025, month: 7, day: 16, hour: 14, minute: 0))
-        schoolTask.hasReminder = true
-        schoolTask.reminderMinutesBefore = 120 // 2 hours before
-        tasks.append(schoolTask)
+        // Add realistic dummy tasks for demonstration
+        addDemoTasks()
         
         // Defer heavy operations
         DispatchQueue.main.async { [weak self] in
@@ -595,5 +565,121 @@ class TaskStore: ObservableObject {
         // Also remove the prefix from remaining tasks
         removeTestPrefixes()
         saveTasks()
+    }
+    
+    private func addDemoTasks() {
+        let calendar = Calendar.current
+        let today = Date()
+        
+        // TODAY tasks
+        tasks.append(Task(text: "Morning meditation 15 minutes", listId: "today", mode: "life"))
+        tasks.append(Task(text: "Review quarterly budget report", listId: "today", mode: "work"))
+        tasks.append(Task(text: "Grocery shopping for dinner party", listId: "today", mode: "life"))
+        tasks.append(Task(text: "Call dentist to schedule appointment", listId: "today", mode: "life"))
+        tasks.append(Task(text: "Finish Chapter 5 reading assignment", listId: "today", mode: "school"))
+        
+        // THIS WEEK tasks
+        tasks.append(Task(text: "Prepare presentation for Monday meeting", listId: "thisWeek", mode: "work"))
+        tasks.append(Task(text: "Submit expense reports", listId: "thisWeek", mode: "work"))
+        tasks.append(Task(text: "Book flights for summer vacation", listId: "thisWeek", mode: "life"))
+        tasks.append(Task(text: "Complete online certification course", listId: "thisWeek", mode: "work"))
+        tasks.append(Task(text: "Organize garage storage", listId: "thisWeek", mode: "life"))
+        
+        // TO-DO LIST (later) tasks
+        tasks.append(Task(text: "Learn Spanish on Duolingo", listId: "later", mode: "life"))
+        tasks.append(Task(text: "Read 'Atomic Habits' book", listId: "later", mode: "life"))
+        tasks.append(Task(text: "Plan weekend hiking trip", listId: "later", mode: "life"))
+        tasks.append(Task(text: "Research new investment opportunities", listId: "later", mode: "work"))
+        tasks.append(Task(text: "Update LinkedIn profile", listId: "later", mode: "work"))
+        tasks.append(Task(text: "Start personal blog", listId: "later", mode: "life"))
+        tasks.append(Task(text: "Learn to cook Thai cuisine", listId: "later", mode: "life"))
+        tasks.append(Task(text: "Organize photo library", listId: "later", mode: "life"))
+        
+        // Calendar tasks with specific dates
+        if let date1 = calendar.date(from: DateComponents(year: 2025, month: 7, day: 23)) {
+            var task = Task(text: "Team building workshop", listId: "calendar_2025-07-23", mode: "work")
+            task.dueDate = calendar.date(bySettingHour: 14, minute: 0, second: 0, of: date1)
+            tasks.append(task)
+        }
+        
+        if let date2 = calendar.date(from: DateComponents(year: 2025, month: 7, day: 25)) {
+            var task = Task(text: "Doctor's appointment", listId: "calendar_2025-07-25", mode: "life")
+            task.dueDate = calendar.date(bySettingHour: 10, minute: 30, second: 0, of: date2)
+            task.hasReminder = true
+            task.reminderMinutesBefore = 60
+            tasks.append(task)
+        }
+        
+        if let date3 = calendar.date(from: DateComponents(year: 2025, month: 7, day: 28)) {
+            var task = Task(text: "Project deadline - Marketing campaign", listId: "calendar_2025-07-28_deadline", mode: "work")
+            task.dueDate = calendar.date(bySettingHour: 17, minute: 0, second: 0, of: date3)
+            tasks.append(task)
+        }
+        
+        if let date4 = calendar.date(from: DateComponents(year: 2025, month: 8, day: 1)) {
+            var task = Task(text: "Rent payment due", listId: "calendar_2025-08-01_deadline", mode: "life")
+            task.dueDate = date4
+            tasks.append(task)
+        }
+        
+        if let date5 = calendar.date(from: DateComponents(year: 2025, month: 8, day: 5)) {
+            var task = Task(text: "Birthday party for Sarah", listId: "calendar_2025-08-05", mode: "life")
+            task.dueDate = calendar.date(bySettingHour: 18, minute: 0, second: 0, of: date5)
+            tasks.append(task)
+        }
+        
+        // Recurring tasks
+        var weeklyTask = Task(text: "Weekly team sync Every Monday", listId: "calendar_2025-07-21_recurring", mode: "work")
+        weeklyTask.dueDate = calendar.date(bySettingHour: 9, minute: 0, second: 0, of: today)
+        weeklyTask.isRecurring = true
+        tasks.append(weeklyTask)
+        
+        var gymTask = Task(text: "Gym workout Every Tuesday", listId: "calendar_2025-07-22_recurring", mode: "life")
+        gymTask.dueDate = calendar.date(bySettingHour: 7, minute: 0, second: 0, of: today)
+        gymTask.isRecurring = true
+        tasks.append(gymTask)
+        
+        var yogaTask = Task(text: "Yoga class Every Thursday", listId: "calendar_2025-07-24_recurring", mode: "life")
+        yogaTask.dueDate = calendar.date(bySettingHour: 18, minute: 30, second: 0, of: today)
+        yogaTask.isRecurring = true
+        tasks.append(yogaTask)
+        
+        // School mode tasks
+        if currentMode == .school {
+            tasks.append(Task(text: "Math homework - Chapter 7", listId: "assignments", mode: "school"))
+            tasks.append(Task(text: "Biology lab report", listId: "assignments", mode: "school"))
+            tasks.append(Task(text: "History essay on Civil War", listId: "assignments", mode: "school"))
+            tasks.append(Task(text: "Chemistry midterm", listId: "exams", mode: "school"))
+            tasks.append(Task(text: "English literature final", listId: "exams", mode: "school"))
+        }
+        
+        // Work mode specific
+        if currentMode == .work {
+            tasks.append(Task(text: "Q3 revenue projections", listId: "projects", mode: "work"))
+            tasks.append(Task(text: "Client proposal for ABC Corp", listId: "deadlines", mode: "work"))
+            tasks.append(Task(text: "Performance review preparations", listId: "schedule", mode: "work"))
+            tasks.append(Task(text: "New product feature brainstorm", listId: "ideas", mode: "work"))
+        }
+        
+        // ROUTINES
+        tasks.append(Task(text: "Morning skincare routine", listId: "routines", mode: "life"))
+        tasks.append(Task(text: "Evening meditation", listId: "routines", mode: "life"))
+        tasks.append(Task(text: "Daily journal writing", listId: "routines", mode: "life"))
+        tasks.append(Task(text: "Water plants", listId: "routines", mode: "life"))
+        
+        // APPOINTMENTS
+        var appointment1 = Task(text: "Hair salon appointment", listId: "appointments", mode: "life")
+        appointment1.dueDate = calendar.date(from: DateComponents(year: 2025, month: 7, day: 26, hour: 15, minute: 0))
+        tasks.append(appointment1)
+        
+        var appointment2 = Task(text: "Car service", listId: "appointments", mode: "life")
+        appointment2.dueDate = calendar.date(from: DateComponents(year: 2025, month: 8, day: 3, hour: 9, minute: 0))
+        tasks.append(appointment2)
+        
+        var appointment3 = Task(text: "Annual health checkup", listId: "appointments", mode: "life")
+        appointment3.dueDate = calendar.date(from: DateComponents(year: 2025, month: 8, day: 10, hour: 11, minute: 30))
+        appointment3.hasReminder = true
+        appointment3.reminderMinutesBefore = 120
+        tasks.append(appointment3)
     }
 }

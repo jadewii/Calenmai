@@ -5,6 +5,8 @@ struct TodayView: View {
     @Binding var currentTab: String
     @State private var newTaskText = ""
     @State private var showingAddTask = false
+    @State private var isAddingTask = false
+    @FocusState private var isTextFieldFocused: Bool
     
     var todayTasks: [Task] {
         taskStore.tasks.filter { 
@@ -27,16 +29,66 @@ struct TodayView: View {
                         .foregroundColor(.gray)
                         .frame(maxWidth: .infinity)
                         .padding(.top, 40) // More padding for iOS
+                        .padding(.bottom, 20)
                     
-                    Spacer()
-                    
-                    // Task list - styled like watchOS
-                    VStack(alignment: .leading, spacing: 20) { // More spacing for iOS
-                        ForEach(todayTasks) { task in
-                            TodayTaskRow_iOS(task: task, taskStore: taskStore)
+                    // Task list at the top with ScrollView
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 12) {
+                            ForEach(todayTasks) { task in
+                                TodayTaskRow_iOS(task: task, taskStore: taskStore)
+                            }
+                            
+                            // Placeholder for new task
+                            HStack(alignment: .top, spacing: 16) {
+                                // Microphone button
+                                Button(action: {
+                                    // Voice input would go here
+                                    taskStore.addTask("Task from voice")
+                                    let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                                    impactFeedback.impactOccurred()
+                                }) {
+                                    ZStack {
+                                        Circle()
+                                            .fill(Color.black)
+                                            .frame(width: 32, height: 32)
+                                        
+                                        Image(systemName: "mic.fill")
+                                            .font(.system(size: 16))
+                                            .foregroundColor(.white)
+                                    }
+                                }
+                                .buttonStyle(PlainButtonStyle())
+                                
+                                if isAddingTask {
+                                    TextField("New task", text: $newTaskText, onCommit: {
+                                        if !newTaskText.isEmpty {
+                                            taskStore.addTask(newTaskText)
+                                            newTaskText = ""
+                                            isAddingTask = false
+                                        }
+                                    })
+                                    .font(.system(size: 18))
+                                    .foregroundColor(.black)
+                                    .focused($isTextFieldFocused)
+                                    .onAppear {
+                                        isTextFieldFocused = true
+                                    }
+                                } else {
+                                    Text("Add new task...")
+                                        .foregroundColor(.black.opacity(0.5))
+                                        .font(.system(size: 18))
+                                        .italic()
+                                        .onTapGesture {
+                                            isAddingTask = true
+                                        }
+                                }
+                                
+                                Spacer()
+                            }
                         }
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 20)
                     }
-                    .padding(.horizontal, 40) // More padding for iOS
                     
                     Spacer()
                 }

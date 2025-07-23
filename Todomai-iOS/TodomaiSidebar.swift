@@ -11,6 +11,18 @@ struct TodomaiSidebar: View {
     @ObservedObject var taskStore: TaskStore
     @Binding var currentTab: String
     
+    var isColoredBackground: Bool {
+        // Check if current view has a colored background
+        switch currentTab {
+        case "today":
+            return false // White background
+        case "calendar", "thisWeek", "later", "routines", "appointments", "settings":
+            return true // Colored backgrounds
+        default:
+            return false
+        }
+    }
+    
     var sidebarItems: [(id: String, title: String, color: Color)] {
         var items: [(id: String, title: String, color: Color)] = []
         
@@ -20,7 +32,7 @@ struct TodomaiSidebar: View {
             items = [
                 ("today", "TODAY", Color(red: 0.4, green: 0.8, blue: 1.0)),
                 ("thisWeek", "THIS WEEK", Color(red: 0.478, green: 0.686, blue: 0.961)),
-                ("later", "LATER", Color(red: 0.859, green: 0.835, blue: 0.145)),
+                ("later", "TO-DO LIST", Color(red: 0.859, green: 0.835, blue: 0.145)),
                 ("calendar", "CALENDAR", Color(red: 1.0, green: 0.431, blue: 0.431)),
                 ("routines", "ROUTINES", Color(red: 0.8, green: 0.8, blue: 1.0)),
                 ("appointments", "APPOINTMENTS", Color(red: 0.8, green: 0.6, blue: 1.0)),
@@ -65,7 +77,7 @@ struct TodomaiSidebar: View {
                 HStack {
                     Text(taskStore.currentMode.displayName)
                         .font(.system(size: 36, weight: .heavy))
-                        .foregroundColor(.black)
+                        .foregroundColor(isColoredBackground ? .white : .black)
                         .animation(nil, value: taskStore.currentMode)
                     Spacer()
                     ZStack {
@@ -97,10 +109,14 @@ struct TodomaiSidebar: View {
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 56)
                                 .background(
-                                    ZStack {
-                                        item.color
-                                        Rectangle()
-                                            .stroke(Color.black, lineWidth: currentTab == item.id ? 6 : 3)
+                                    Group {
+                                        if currentTab == item.id {
+                                            // Darken the color when selected
+                                            item.color
+                                                .overlay(Color.black.opacity(0.3))
+                                        } else {
+                                            item.color
+                                        }
                                     }
                                 )
                         }
@@ -122,20 +138,13 @@ struct TodomaiSidebar: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .frame(height: 56)
-                    .background(
-                        ZStack {
-                            Color.red
-                            Rectangle()
-                                .stroke(Color.black, lineWidth: 6)
-                        }
-                    )
+                    .background(Color.red)
             }
             .buttonStyle(PlainButtonStyle())
             .padding(.horizontal, 20)
             .padding(.bottom, 20)
             }
             .frame(maxWidth: .infinity)
-            .background(Color.white)
             .animation(nil, value: taskStore.currentMode) // Remove animation when mode changes
         }
         .padding(.top, 20)
@@ -144,7 +153,7 @@ struct TodomaiSidebar: View {
             VStack(spacing: 0) {
                 taskStore.currentMode.modeButtonColor
                     .frame(height: 20)
-                Color.white
+                Color.clear
             }
         )
     }

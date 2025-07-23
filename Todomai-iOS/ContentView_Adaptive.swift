@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView_Adaptive: View {
     @StateObject private var taskStore = TaskStore()
-    @State private var currentTab = "menu"
+    @State private var currentTab = "today"
     @State private var isRouletteMode = false
     @State private var showRandomModeSelection = false
     @State private var isInYearMode = false
@@ -75,13 +75,31 @@ struct ContentView_Adaptive: View {
                         isRouletteMode: $isRouletteMode
                     )
                     
-                default:
-                    MenuView(
+                case "routines":
+                    RoutinesView(
                         taskStore: taskStore,
-                        currentTab: $currentTab,
-                        isRouletteMode: $isRouletteMode,
-                        showRandomModeSelection: $showRandomModeSelection
+                        currentTab: $currentTab
                     )
+                    
+                default:
+                    // Check if it's a list view
+                    if ["later", "appointments", "settings"].contains(currentTab) {
+                        ListsView(
+                            taskStore: taskStore,
+                            currentTab: $currentTab,
+                            isProcessing: .constant(false),
+                            listId: currentTab,
+                            listName: getListName(for: currentTab),
+                            backgroundColor: getListColor(for: currentTab)
+                        )
+                    } else {
+                        MenuView(
+                            taskStore: taskStore,
+                            currentTab: $currentTab,
+                            isRouletteMode: $isRouletteMode,
+                            showRandomModeSelection: $showRandomModeSelection
+                        )
+                    }
                 }
             }
         }
@@ -96,50 +114,42 @@ struct ContentView_Adaptive: View {
     
     // MARK: - iPad Layout with custom UI
     private var iPadLayout: some View {
-        ZStack {
-            // Background color from current view
-            Group {
-                switch currentTab {
-                case "today":
-                    Color.white.ignoresSafeArea()
-                case "thisWeek":
-                    Color(red: 0.478, green: 0.686, blue: 0.961).ignoresSafeArea()
-                case "routines":
-                    Color(red: 0.8, green: 0.8, blue: 1.0).ignoresSafeArea()
-                case "appointments":
-                    Color(red: 0.8, green: 0.6, blue: 1.0).ignoresSafeArea()
-                case "settings":
-                    Color(red: 0.6, green: 0.6, blue: 0.6).ignoresSafeArea()
-                case "calendar":
-                    // Get the calendar month color
-                    CalendarView_iOS.getMonthBackgroundColor(for: taskStore.calendarDisplayDate)
-                        .ignoresSafeArea()
-                case "later", "week", "month", "assignments", "exams",
-                     "routine", "goals", "plans", "bills",
-                     "projects", "schedule", "ideas", "deadlines",
-                     "homework", "study", "notes", "tests":
-                    getListColor(for: currentTab).ignoresSafeArea()
-                default:
-                    Color.white.ignoresSafeArea()
-                }
-            }
-            
-            HStack(spacing: 0) {
-                // Custom sidebar
-                TodomaiSidebar(taskStore: taskStore, currentTab: $currentTab)
-                    .frame(width: 320)
-                    .overlay(
-                        Rectangle()
-                            .stroke(Color.black, lineWidth: 2)
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                    )
-                
-                // Detail view
-                ZStack {
-                    // Remove white background - let each view control its own background
-                    
-                    // Detail view based on selection
+        HStack(spacing: 0) {
+            // Custom sidebar with its own background
+            TodomaiSidebar(taskStore: taskStore, currentTab: $currentTab)
+                .frame(width: 320)
+                .background(
+                    // Sidebar background color based on current view
                     Group {
+                        switch currentTab {
+                        case "today":
+                            Color.white
+                        case "thisWeek":
+                            Color(red: 0.478, green: 0.686, blue: 0.961)
+                        case "routines":
+                            Color(red: 0.8, green: 0.8, blue: 1.0)
+                        case "appointments":
+                            Color(red: 0.8, green: 0.6, blue: 1.0)
+                        case "settings":
+                            Color(red: 0.6, green: 0.6, blue: 0.6)
+                        case "calendar":
+                            CalendarView_iOS.getMonthBackgroundColor(for: taskStore.calendarDisplayDate)
+                        case "later":
+                            Color(red: 0.859, green: 0.835, blue: 0.145)
+                        case "week", "month", "assignments", "exams",
+                             "routine", "goals", "plans", "bills",
+                             "projects", "schedule", "ideas", "deadlines",
+                             "homework", "study", "notes", "tests":
+                            getListColor(for: currentTab)
+                        default:
+                            Color.white
+                        }
+                    }
+                    .ignoresSafeArea()
+                )
+                
+            // Detail view - each view controls its own background
+            Group {
                     switch currentTab {
                     case "today":
                     TodayView(taskStore: taskStore, currentTab: $currentTab)
@@ -157,11 +167,16 @@ struct ContentView_Adaptive: View {
                     RepeatFrequencyView(taskStore: taskStore, currentTab: $currentTab)
                 case "settings":
                     SettingsView(taskStore: taskStore, currentTab: $currentTab)
+                case "routines":
+                    RoutinesView(
+                        taskStore: taskStore,
+                        currentTab: $currentTab
+                    )
                 case "later", "week", "month", "assignments", "exams",
                      "routine", "goals", "plans", "bills",
                      "projects", "schedule", "ideas", "deadlines",
                      "homework", "study", "notes", "tests",
-                     "routines", "appointments":
+                     "appointments":
                     ListsView(
                         taskStore: taskStore,
                         currentTab: $currentTab,
@@ -186,10 +201,8 @@ struct ContentView_Adaptive: View {
                 }
                 .id(currentTab) // Force view refresh on tab change
                 .animation(nil, value: currentTab) // Remove animation on tab change
-            } // End ZStack (detail view)
         } // End HStack
-    } // End ZStack (background)
-}
+    }
     
     // MARK: - Helper Methods
     private func detailView(for tab: String) -> some View {

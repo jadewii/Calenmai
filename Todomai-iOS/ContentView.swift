@@ -476,7 +476,7 @@ struct CalendarView_iOS: View {
                     // Header with month and year text
                     Text(dateFormatter.string(from: displayDate).uppercased())
                         .font(.system(size: 36, weight: .heavy)) // Same font as LIFE/WORK text
-                        .foregroundColor(.black)
+                        .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
                         .frame(maxWidth: .infinity)
                         .padding(.top, 40) // Move title up
                         .padding(.bottom, 180) // More space to calendar
@@ -614,7 +614,7 @@ struct CalendarGridView_iOS: View {
                 ForEach(daysOfWeek, id: \.self) { day in
                     Text(day)
                         .font(.system(size: 14)) // Larger for iOS
-                        .foregroundColor(.gray)
+                        .foregroundColor(calendar.isDate(currentDate, equalTo: Date(), toGranularity: .month) ? .gray : .white.opacity(0.7))
                         .frame(maxWidth: .infinity)
                 }
             }

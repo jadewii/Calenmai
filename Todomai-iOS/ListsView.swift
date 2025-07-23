@@ -13,6 +13,9 @@ struct ListsView: View {
     @State private var showTimerSelection = false
     @State private var selectedTimerMinutes: Int? = nil
     @State private var showTimerReady = false
+    @State private var isAddingTask = false
+    @State private var newTaskText = ""
+    @FocusState private var isTextFieldFocused: Bool
     
     var tasks: [Task] {
         taskStore.tasks.filter { $0.listId == listId && $0.mode == taskStore.currentMode.rawValue && !$0.isCompleted }
@@ -63,6 +66,51 @@ struct ListsView: View {
                                             }
                                         )
                                     }
+                                    
+                                    // Placeholder for new task
+                                    HStack(alignment: .top, spacing: 16) {
+                                        // Microphone button
+                                        Button(action: {
+                                            startVoiceInput()
+                                        }) {
+                                            ZStack {
+                                                Circle()
+                                                    .fill(Color.black)
+                                                    .frame(width: 32, height: 32)
+                                                
+                                                Image(systemName: "mic.fill")
+                                                    .font(.system(size: 16))
+                                                    .foregroundColor(.white)
+                                            }
+                                        }
+                                        .buttonStyle(PlainButtonStyle())
+                                        
+                                        if isAddingTask {
+                                            TextField("New task", text: $newTaskText, onCommit: {
+                                                if !newTaskText.isEmpty {
+                                                    taskStore.addTask(newTaskText)
+                                                    newTaskText = ""
+                                                    isAddingTask = false
+                                                }
+                                            })
+                                            .font(.system(size: 18))
+                                            .foregroundColor(.black)
+                                            .focused($isTextFieldFocused)
+                                            .onAppear {
+                                                isTextFieldFocused = true
+                                            }
+                                        } else {
+                                            Text("Add new task...")
+                                                .foregroundColor(.black.opacity(0.5))
+                                                .font(.system(size: 18))
+                                                .italic()
+                                                .onTapGesture {
+                                                    isAddingTask = true
+                                                }
+                                        }
+                                        
+                                        Spacer()
+                                    }
                                 }
                                 .padding(.horizontal, 24)
                                 .padding(.vertical, 20)
@@ -83,16 +131,16 @@ struct ListsView: View {
                                 }) {
                                     Circle()
                                         .fill(getItDoneMode ? Color.black : Color.clear)
-                                        .frame(width: 20, height: 20)
+                                        .frame(width: 32, height: 32)
                                         .overlay(
                                             Circle()
-                                                .stroke(Color.black, lineWidth: 2)
+                                                .stroke(Color.black, lineWidth: 3)
                                         )
                                 }
                                 .buttonStyle(PlainButtonStyle())
                                 
-                                Text("get it done")
-                                    .font(.system(size: 14))
+                                Text("move to today")
+                                    .font(.system(size: 16))
                                     .foregroundColor(getItDoneMode ? .black : .black.opacity(0.6))
                             }
                             .padding(.leading, 24)
@@ -187,7 +235,7 @@ struct TaskRow: View {
     }
     
     var body: some View {
-        HStack(alignment: .top, spacing: 12) {
+        HStack(alignment: .top, spacing: 16) {
             Button(action: {
                 if getItDoneMode {
                     // Trigger timer selection
@@ -205,18 +253,18 @@ struct TaskRow: View {
                     ZStack {
                         Circle()
                             .fill(Color.green)
-                            .frame(width: 20, height: 20)
+                            .frame(width: 32, height: 32)
                         Image(systemName: "checkmark")
                             .foregroundColor(.white)
-                            .font(.system(size: 14, weight: .bold))
+                            .font(.system(size: 16, weight: .bold))
                     }
                 } else {
                     Circle()
                         .fill(getItDoneMode ? Color.white : Color.clear)
-                        .frame(width: 20, height: 20)
+                        .frame(width: 32, height: 32)
                         .overlay(
                             Circle()
-                                .stroke(Color.black, lineWidth: 2)
+                                .stroke(Color.black, lineWidth: 3)
                         )
                 }
             }
@@ -228,7 +276,7 @@ struct TaskRow: View {
                 
                 Text(displayText)
                     .foregroundColor(.black)
-                    .font(.system(size: 16))
+                    .font(.system(size: 18))
                     .multilineTextAlignment(.leading)
                 
                 // Show time if task has a dueDate with time
