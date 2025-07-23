@@ -26,6 +26,9 @@
 		A1B2C3E41A2B3C4D5E6F78A0 /* TestDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E31A2B3C4D5E6F78A0 /* TestDataManager.swift */; };
 		A1B2C3F01A2B3C4D5E6F78A5 /* TodomaiSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EF1A2B3C4D5E6F78A5 /* TodomaiSidebar.swift */; };
 		A1B2C3F11A2B3C4D5E6F78A6 /* RoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F01A2B3C4D5E6F78A6 /* RoutinesView.swift */; };
+		A1B2C3F31A2B3C4D5E6F78A8 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F21A2B3C4D5E6F78A8 /* RadioView.swift */; };
+		A1B2C3F51A2B3C4D5E6F78AA /* StationDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F41A2B3C4D5E6F78AA /* StationDownloadManager.swift */; };
+		A1B2C3F71A2B3C4D5E6F78AC /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F61A2B3C4D5E6F78AC /* MusicPlayerView.swift */; };
 		A1B2C3E81A2B3C4D5E6F78A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3E71A2B3C4D5E6F78A4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		A1B2C3E31A2B3C4D5E6F78A0 /* TestDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataManager.swift; sourceTree = "<group>"; };
 		A1B2C3EF1A2B3C4D5E6F78A5 /* TodomaiSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodomaiSidebar.swift; sourceTree = "<group>"; };
 		A1B2C3F01A2B3C4D5E6F78A6 /* RoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesView.swift; sourceTree = "<group>"; };
+		A1B2C3F21A2B3C4D5E6F78A8 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		A1B2C3F41A2B3C4D5E6F78AA /* StationDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDownloadManager.swift; sourceTree = "<group>"; };
+		A1B2C3F61A2B3C4D5E6F78AC /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
 		A1B2C3E71A2B3C4D5E6F78A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +109,9 @@
 				A1B2C3E31A2B3C4D5E6F78A0 /* TestDataManager.swift */,
 				A1B2C3EF1A2B3C4D5E6F78A5 /* TodomaiSidebar.swift */,
 				A1B2C3F01A2B3C4D5E6F78A6 /* RoutinesView.swift */,
+				A1B2C3F21A2B3C4D5E6F78A8 /* RadioView.swift */,
+				A1B2C3F41A2B3C4D5E6F78AA /* StationDownloadManager.swift */,
+				A1B2C3F61A2B3C4D5E6F78AC /* MusicPlayerView.swift */,
 				A1B2C3E71A2B3C4D5E6F78A4 /* Assets.xcassets */,
 			);
 			path = "Todomai-iOS";
@@ -246,6 +255,9 @@
 				A1B2C3E41A2B3C4D5E6F78A0 /* TestDataManager.swift in Sources */,
 				A1B2C3F01A2B3C4D5E6F78A5 /* TodomaiSidebar.swift in Sources */,
 				A1B2C3F11A2B3C4D5E6F78A6 /* RoutinesView.swift in Sources */,
+				A1B2C3F31A2B3C4D5E6F78A8 /* RadioView.swift in Sources */,
+				A1B2C3F51A2B3C4D5E6F78AA /* StationDownloadManager.swift in Sources */,
+				A1B2C3F71A2B3C4D5E6F78AC /* MusicPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

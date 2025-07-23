@@ -16,7 +16,7 @@ struct TodomaiSidebar: View {
         switch currentTab {
         case "today":
             return false // White background
-        case "calendar", "thisWeek", "later", "routines", "appointments", "settings":
+        case "calendar", "thisWeek", "later", "routines", "appointments", "radio", "settings":
             return true // Colored backgrounds
         default:
             return false
@@ -33,7 +33,7 @@ struct TodomaiSidebar: View {
                 ("today", "TODAY", Color(red: 0.4, green: 0.8, blue: 1.0)),
                 ("thisWeek", "THIS WEEK", Color(red: 0.478, green: 0.686, blue: 0.961)),
                 ("later", "TO-DO LIST", Color(red: 0.859, green: 0.835, blue: 0.145)),
-                ("calendar", "CALENDAR", Color(red: 1.0, green: 0.431, blue: 0.431)),
+                ("getItDone", "GET IT DONE!", Color.red),
                 ("routines", "ROUTINES", Color(red: 0.8, green: 0.8, blue: 1.0)),
                 ("appointments", "APPOINTMENTS", Color(red: 0.8, green: 0.6, blue: 1.0)),
                 ("settings", "SETTINGS", Color(red: 0.6, green: 0.6, blue: 0.6))
@@ -43,7 +43,7 @@ struct TodomaiSidebar: View {
                 ("today", "TODAY", Color.orange),
                 ("week", "THIS WEEK", Color(red: 1.0, green: 0.5, blue: 0.0)),
                 ("month", "THIS MONTH", Color(red: 1.0, green: 0.7, blue: 0.3)),
-                ("calendar", "CALENDAR", Color(red: 1.0, green: 0.431, blue: 0.431)),
+                ("getItDone", "GET IT DONE!", Color.red),
                 ("routines", "ROUTINES", Color(red: 0.8, green: 0.8, blue: 1.0)),
                 ("appointments", "APPOINTMENTS", Color(red: 0.8, green: 0.6, blue: 1.0)),
                 ("settings", "SETTINGS", Color(red: 0.6, green: 0.6, blue: 0.6))
@@ -53,7 +53,7 @@ struct TodomaiSidebar: View {
                 ("today", "TODAY", Color(red: 0.6, green: 0.4, blue: 1.0)),
                 ("assignments", "ASSIGNMENTS", Color(red: 0.5, green: 0.3, blue: 0.8)),
                 ("exams", "EXAMS", Color(red: 0.7, green: 0.2, blue: 0.9)),
-                ("calendar", "CALENDAR", Color(red: 1.0, green: 0.431, blue: 0.431)),
+                ("getItDone", "GET IT DONE!", Color.red),
                 ("routines", "ROUTINES", Color(red: 0.8, green: 0.8, blue: 1.0)),
                 ("appointments", "APPOINTMENTS", Color(red: 0.8, green: 0.6, blue: 1.0)),
                 ("settings", "SETTINGS", Color(red: 0.6, green: 0.6, blue: 0.6))
@@ -127,20 +127,58 @@ struct TodomaiSidebar: View {
                 .padding(.horizontal, 20)
             }
             
-            // GET IT DONE! button at bottom
-            Button(action: {
-                let impactFeedback = UIImpactFeedbackGenerator(style: .light)
-                impactFeedback.impactOccurred()
-                currentTab = "getItDone"
-            }) {
-                Text("GET IT DONE!")
-                    .font(.system(size: 18, weight: .heavy))
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 56)
-                    .background(Color.red)
+            Spacer()
+            
+            // Bottom buttons - RADIO and CALENDAR
+            VStack(spacing: 12) {
+                // RADIO button
+                Button(action: {
+                    let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                    impactFeedback.impactOccurred()
+                    currentTab = "radio"
+                }) {
+                    Text("RADIO")
+                        .font(.system(size: 18, weight: .heavy))
+                        .foregroundColor(currentTab == "radio" ? .white : .black)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 56)
+                        .background(
+                            Group {
+                                let radioColor = Color(red: 0.4, green: 0.9, blue: 0.6)
+                                if currentTab == "radio" {
+                                    radioColor.overlay(Color.black.opacity(0.3))
+                                } else {
+                                    radioColor
+                                }
+                            }
+                        )
+                }
+                .buttonStyle(PlainButtonStyle())
+                
+                // CALENDAR button
+                Button(action: {
+                    let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                    impactFeedback.impactOccurred()
+                    currentTab = "calendar"
+                }) {
+                    Text("CALENDAR")
+                        .font(.system(size: 18, weight: .heavy))
+                        .foregroundColor(currentTab == "calendar" ? .white : .black)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 56)
+                        .background(
+                            Group {
+                                let calendarColor = Color(red: 1.0, green: 0.431, blue: 0.431)
+                                if currentTab == "calendar" {
+                                    calendarColor.overlay(Color.black.opacity(0.3))
+                                } else {
+                                    calendarColor
+                                }
+                            }
+                        )
+                }
+                .buttonStyle(PlainButtonStyle())
             }
-            .buttonStyle(PlainButtonStyle())
             .padding(.horizontal, 20)
             .padding(.bottom, 20)
             }

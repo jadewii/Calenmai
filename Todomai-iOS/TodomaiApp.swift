@@ -131,7 +131,7 @@ enum ViewMode: String, CaseIterable, Codable {
             switch id {
             case "today": return self.modeButtonColor // Blue for LIFE mode
             case "thisWeek": return Color(red: 0.478, green: 0.686, blue: 0.961) // #7aaff5
-            case "later": return Color(red: 1.0, green: 0.6, blue: 0.0) // Orange
+            case "later": return Color(red: 0.859, green: 0.835, blue: 0.145) // Yellow
             case "done": return Color(red: 1.0, green: 0.7, blue: 0.7) // Pastel red for urgency
             default: return .gray
             }
@@ -139,7 +139,7 @@ enum ViewMode: String, CaseIterable, Codable {
             switch id {
             case "today": return self.modeButtonColor // Green for WORK mode
             case "thisWeek": return Color(red: 0.478, green: 0.686, blue: 0.961) // #7aaff5
-            case "later": return Color(red: 1.0, green: 0.6, blue: 0.0) // Orange
+            case "later": return Color(red: 0.859, green: 0.835, blue: 0.145) // Yellow
             case "done": return Color(red: 1.0, green: 0.7, blue: 0.7) // Pastel red for urgency
             default: return .gray
             }
@@ -147,7 +147,7 @@ enum ViewMode: String, CaseIterable, Codable {
             switch id {
             case "today": return self.modeButtonColor // Purple for SCHOOL mode
             case "thisWeek": return Color(red: 0.478, green: 0.686, blue: 0.961) // #7aaff5
-            case "later": return Color(red: 1.0, green: 0.6, blue: 0.0) // Orange
+            case "later": return Color(red: 0.859, green: 0.835, blue: 0.145) // Yellow
             case "done": return Color(red: 1.0, green: 0.7, blue: 0.7) // Pastel red for urgency
             default: return .gray
             }
