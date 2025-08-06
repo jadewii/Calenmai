@@ -54,8 +54,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Todomai uses the microphone to add tasks using voice input.</string>
+	<string>Calemai uses the microphone to add tasks using voice input.</string>
 	<key>NSUserNotificationsUsageDescription</key>
-	<string>Todomai sends notifications for task reminders.</string>
+	<string>Calemai sends notifications for task reminders.</string>
 </dict>
 </plist>
