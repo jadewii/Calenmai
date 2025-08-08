@@ -28,7 +28,7 @@ struct DayScheduleView: View {
                 VStack(spacing: 0) {
                     Text(formatDate(selectedDate))
                         .font(.system(size: 24, weight: .heavy))
-                        .foregroundColor(.black)
+                        .foregroundColor(.gray)
                         .padding(.top, 12)
                     
                     // Navigation buttons - matching app style
@@ -47,7 +47,7 @@ struct DayScheduleView: View {
                                 ZStack {
                                     taskStore.currentMode.modeButtonColor
                                     RoundedRectangle(cornerRadius: 8)
-                                        .stroke(Color.black, lineWidth: 2)
+                                        .stroke(Color.gray, lineWidth: 2)
                                 }
                             )
                         }
@@ -87,7 +87,7 @@ struct DayScheduleView: View {
                                 ZStack {
                                     taskStore.currentMode.modeButtonColor
                                     RoundedRectangle(cornerRadius: 8)
-                                        .stroke(Color.black, lineWidth: 2)
+                                        .stroke(Color.gray, lineWidth: 2)
                                 }
                             )
                         }
@@ -99,7 +99,7 @@ struct DayScheduleView: View {
                     ZStack {
                         Color.white
                         Rectangle()
-                            .stroke(Color.black, lineWidth: 2)
+                            .stroke(Color.gray, lineWidth: 2)
                     }
                 )
                 
@@ -180,13 +180,13 @@ struct TimeBlockView: View {
             // Time label with heavy font
             Text(formatHour(hour))
                 .font(.system(size: 16, weight: .heavy))
-                .foregroundColor(isCurrentHour ? taskStore.currentMode.modeButtonColor : .black)
+                .foregroundColor(isCurrentHour ? taskStore.currentMode.modeButtonColor : .gray)
                 .frame(width: 70, alignment: .trailing)
                 .padding(.trailing, 8)
             
             // Bold divider line
             Rectangle()
-                .fill(isCurrentHour ? taskStore.currentMode.modeButtonColor : Color.black)
+                .fill(isCurrentHour ? taskStore.currentMode.modeButtonColor : Color.gray)
                 .frame(width: 2)
             
             // Task area with app styling
@@ -198,7 +198,7 @@ struct TimeBlockView: View {
                             .fill(Color.gray.opacity(0.05))
                             .overlay(
                                 Rectangle()
-                                    .stroke(Color.black.opacity(0.1), lineWidth: 1)
+                                    .stroke(Color.gray.opacity(0.2), lineWidth: 1)
                             )
                         
                         Text("—")
@@ -225,7 +225,7 @@ struct TimeBlockView: View {
                     Color.white
                 }
                 Rectangle()
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.gray, lineWidth: 1)
             }
         )
     }
@@ -257,7 +257,7 @@ struct TaskBlockView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(task.text)
                     .font(.system(size: 16, weight: .heavy))
-                    .foregroundColor(task.isCompleted ? .gray : .black)
+                    .foregroundColor(task.isCompleted ? Color.gray.opacity(0.5) : .gray)
                     .strikethrough(task.isCompleted)
                     .lineLimit(2)
                 
@@ -279,7 +279,7 @@ struct TaskBlockView: View {
             }) {
                 ZStack {
                     Circle()
-                        .stroke(Color.black, lineWidth: 2)
+                        .stroke(Color.gray, lineWidth: 2)
                         .background(
                             Circle()
                                 .fill(task.isCompleted ? Color.green : Color.white)
@@ -301,7 +301,7 @@ struct TaskBlockView: View {
             ZStack {
                 getTaskBackgroundColor()
                 RoundedRectangle(cornerRadius: 4)
-                    .stroke(Color.black, lineWidth: 2)
+                    .stroke(Color.gray, lineWidth: 2)
             }
         )
     }
