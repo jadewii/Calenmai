@@ -1,0 +1,238 @@
+{
+  "" : {
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Calemai-master.dia",
+    "emit-module-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Calemai-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Calemai-master-emit-module.dia",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Calemai-master.swiftdeps"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/AddTaskView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/AddTaskView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/CalemaiApp.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiApp~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/CalemaiSidebar.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalemaiSidebar~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/CalendarView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/CalendarView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/ContentView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/ContentView_Adaptive.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ContentView_Adaptive~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/DayView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/DayView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/EditTaskView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/EditTaskView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/ListsView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ListsView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/MusicPlayerView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/MusicPlayerView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/RadioView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RadioView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/RepeatFrequencyView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RepeatFrequencyView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/RoutinesView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/RoutinesView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/SetRepeatTaskView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SetRepeatTaskView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/SettingsView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/StationDownloadManager.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/StationDownloadManager~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/Styles.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/Styles~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/TaskDetailView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskDetailView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/TaskTemplate.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TaskTemplate~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/TestDataManager.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TestDataManager~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/ThisWeekView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/ThisWeekView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/Calemai/TodayView.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/TodayView~partial.swiftmodule"
+  },
+  "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/jade/Documents/xCode/Calemai/build/Build/Intermediates.noindex/Calemai.build/Debug-iphonesimulator/Calemai.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

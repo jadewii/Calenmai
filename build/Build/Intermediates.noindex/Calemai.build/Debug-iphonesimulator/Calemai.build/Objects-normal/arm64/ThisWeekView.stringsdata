@@ -1,0 +1,16 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/ThisWeekView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "THIS WEEK",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 19
+        }
+      }
+    ]
+  },
+  "version": 1
+}

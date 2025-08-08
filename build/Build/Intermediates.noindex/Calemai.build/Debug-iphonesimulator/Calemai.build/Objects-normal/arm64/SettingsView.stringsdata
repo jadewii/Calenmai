@@ -1,0 +1,80 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "SETTINGS",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "CURRENT MODE",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "STATISTICS",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "ABOUT",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "TODOMAI",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "VERSION 1.0",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "© 2025",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "CLEAR COMPLETED TASKS",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 105
+        }
+      },
+      {
+        "comment": "",
+        "key": "← BACK",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 131
+        }
+      }
+    ]
+  },
+  "version": 1
+}

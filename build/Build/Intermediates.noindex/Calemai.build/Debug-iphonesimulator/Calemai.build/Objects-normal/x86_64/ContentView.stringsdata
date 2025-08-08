@@ -1,0 +1,24 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "GET IT DONE!",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "← BACK TO MENU",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 343
+        }
+      }
+    ]
+  },
+  "version": 1
+}

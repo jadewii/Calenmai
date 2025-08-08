@@ -1,0 +1,24 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/CalemaiSidebar.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "RADIO",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "CALENDAR",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 167
+        }
+      }
+    ]
+  },
+  "version": 1
+}

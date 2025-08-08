@@ -1,0 +1,184 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/RadioView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "SELECT A STATION",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "RADIO",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "BACK",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "BACK",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "TAP A STATION TO LISTEN",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "DOWNLOAD STATIONS FOR OFFLINE LISTENING",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld songs",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 236
+        }
+      },
+      {
+        "comment": "",
+        "key": "COMING SOON",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 240
+        }
+      },
+      {
+        "comment": "",
+        "key": "CLOSE",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 285
+        }
+      },
+      {
+        "comment": "",
+        "key": "DELETE",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 298
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 336
+        }
+      },
+      {
+        "comment": "",
+        "key": "SONGS",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 339
+        }
+      },
+      {
+        "comment": "",
+        "key": "~%lld",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 345
+        }
+      },
+      {
+        "comment": "",
+        "key": "MB",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 348
+        }
+      },
+      {
+        "comment": "",
+        "key": "DOWNLOAD STATION",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 366
+        }
+      },
+      {
+        "comment": "",
+        "key": "DOWNLOADING...",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 382
+        }
+      },
+      {
+        "comment": "",
+        "key": "CANCEL",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 394
+        }
+      },
+      {
+        "comment": "",
+        "key": "PLAY STATION",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 417
+        }
+      },
+      {
+        "comment": "",
+        "key": "DOWNLOADED",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 435
+        }
+      },
+      {
+        "comment": "",
+        "key": "ERROR",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 443
+        }
+      },
+      {
+        "comment": "",
+        "key": "COMING SOON",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 465
+        }
+      },
+      {
+        "comment": "",
+        "key": "This station will be available in a future update",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 469
+        }
+      }
+    ]
+  },
+  "version": 1
+}

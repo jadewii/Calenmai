@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1B2C3D41A2B3C4D5E6F7890 /* TodomaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D31A2B3C4D5E6F7890 /* TodomaiApp.swift */; };
+		A1B2C3D41A2B3C4D5E6F7890 /* CalemaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D31A2B3C4D5E6F7890 /* CalemaiApp.swift */; };
 		A1B2C3D51A2B3C4D5E6F7891 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D41A2B3C4D5E6F7891 /* ContentView.swift */; };
 		A1B2C3D61A2B3C4D5E6F7892 /* ContentView_Adaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D51A2B3C4D5E6F7892 /* ContentView_Adaptive.swift */; };
 		A1B2C3D71A2B3C4D5E6F7893 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D61A2B3C4D5E6F7893 /* TodayView.swift */; };
@@ -24,7 +24,7 @@
 		A1B2C3E21A2B3C4D5E6F789E /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E11A2B3C4D5E6F789E /* Styles.swift */; };
 		A1B2C3E31A2B3C4D5E6F789F /* TaskTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E21A2B3C4D5E6F789F /* TaskTemplate.swift */; };
 		A1B2C3E41A2B3C4D5E6F78A0 /* TestDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E31A2B3C4D5E6F78A0 /* TestDataManager.swift */; };
-		A1B2C3F01A2B3C4D5E6F78A5 /* TodomaiSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EF1A2B3C4D5E6F78A5 /* TodomaiSidebar.swift */; };
+		A1B2C3F01A2B3C4D5E6F78A5 /* CalemaiSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3EF1A2B3C4D5E6F78A5 /* CalemaiSidebar.swift */; };
 		A1B2C3F11A2B3C4D5E6F78A6 /* RoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F01A2B3C4D5E6F78A6 /* RoutinesView.swift */; };
 		A1B2C3F31A2B3C4D5E6F78A8 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F21A2B3C4D5E6F78A8 /* RadioView.swift */; };
 		A1B2C3F51A2B3C4D5E6F78AA /* StationDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3F41A2B3C4D5E6F78AA /* StationDownloadManager.swift */; };
@@ -33,8 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1B2C3D01A2B3C4D5E6F7800 /* Todomai-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todomai-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B2C3D31A2B3C4D5E6F7890 /* TodomaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodomaiApp.swift; sourceTree = "<group>"; };
+		A1B2C3D01A2B3C4D5E6F7800 /* Calemai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calemai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D31A2B3C4D5E6F7890 /* CalemaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalemaiApp.swift; sourceTree = "<group>"; };
 		A1B2C3D41A2B3C4D5E6F7891 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1B2C3D51A2B3C4D5E6F7892 /* ContentView_Adaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_Adaptive.swift; sourceTree = "<group>"; };
 		A1B2C3D61A2B3C4D5E6F7893 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		A1B2C3E11A2B3C4D5E6F789E /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		A1B2C3E21A2B3C4D5E6F789F /* TaskTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTemplate.swift; sourceTree = "<group>"; };
 		A1B2C3E31A2B3C4D5E6F78A0 /* TestDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataManager.swift; sourceTree = "<group>"; };
-		A1B2C3EF1A2B3C4D5E6F78A5 /* TodomaiSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodomaiSidebar.swift; sourceTree = "<group>"; };
+		A1B2C3EF1A2B3C4D5E6F78A5 /* CalemaiSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalemaiSidebar.swift; sourceTree = "<group>"; };
 		A1B2C3F01A2B3C4D5E6F78A6 /* RoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesView.swift; sourceTree = "<group>"; };
 		A1B2C3F21A2B3C4D5E6F78A8 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		A1B2C3F41A2B3C4D5E6F78AA /* StationDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDownloadManager.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		A1B2C3C71A2B3C4D5E6F7880 = {
 			isa = PBXGroup;
 			children = (
-				A1B2C3D21A2B3C4D5E6F7880 /* Todomai-iOS */,
+				A1B2C3D21A2B3C4D5E6F7880 /* Calemai */,
 				A1B2C3E91A2B3C4D5E6F7880 /* Shared */,
 				A1B2C3D11A2B3C4D5E6F7880 /* Products */,
 			);
@@ -82,12 +82,12 @@
 		A1B2C3D11A2B3C4D5E6F7880 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1B2C3D01A2B3C4D5E6F7800 /* Todomai-iOS.app */,
+				A1B2C3D01A2B3C4D5E6F7800 /* Calemai.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1B2C3D21A2B3C4D5E6F7880 /* Todomai-iOS */ = {
+		A1B2C3D21A2B3C4D5E6F7880 /* Calemai */ = {
 			isa = PBXGroup;
 			children = (
 				A1B2C3D31A2B3C4D5E6F7890 /* TodomaiApp.swift */,
@@ -107,14 +107,14 @@
 				A1B2C3E11A2B3C4D5E6F789E /* Styles.swift */,
 				A1B2C3E21A2B3C4D5E6F789F /* TaskTemplate.swift */,
 				A1B2C3E31A2B3C4D5E6F78A0 /* TestDataManager.swift */,
-				A1B2C3EF1A2B3C4D5E6F78A5 /* TodomaiSidebar.swift */,
+				A1B2C3EF1A2B3C4D5E6F78A5 /* CalemaiSidebar.swift */,
 				A1B2C3F01A2B3C4D5E6F78A6 /* RoutinesView.swift */,
 				A1B2C3F21A2B3C4D5E6F78A8 /* RadioView.swift */,
 				A1B2C3F41A2B3C4D5E6F78AA /* StationDownloadManager.swift */,
 				A1B2C3F61A2B3C4D5E6F78AC /* MusicPlayerView.swift */,
 				A1B2C3E71A2B3C4D5E6F78A4 /* Assets.xcassets */,
 			);
-			path = "Todomai-iOS";
+			path = "Calemai";
 			sourceTree = "<group>";
 		};
 		A1B2C3E91A2B3C4D5E6F7880 /* Shared */ = {
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1B2C3CF1A2B3C4D5E6F7880 /* Todomai-iOS */ = {
+		A1B2C3CF1A2B3C4D5E6F7880 /* Calemai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1B2C3E91A2B3C4D5E6F7890 /* Build configuration list for PBXNativeTarget "Todomai-iOS" */;
+			buildConfigurationList = A1B2C3E91A2B3C4D5E6F7890 /* Build configuration list for PBXNativeTarget "Calemai" */;
 			buildPhases = (
 				A1B2C3CC1A2B3C4D5E6F7880 /* Sources */,
 				A1B2C3CD1A2B3C4D5E6F7880 /* Frameworks */,
@@ -179,11 +179,11 @@
 			);
 			dependencies = (
 			);
-			name = "Todomai-iOS";
+			name = "Calemai";
 			packageProductDependencies = (
 			);
-			productName = "Todomai-iOS";
-			productReference = A1B2C3D01A2B3C4D5E6F7800 /* Todomai-iOS.app */;
+			productName = "Calemai";
+			productReference = A1B2C3D01A2B3C4D5E6F7800 /* Calemai.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +201,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A1B2C3CB1A2B3C4D5E6F7880 /* Build configuration list for PBXProject "Todomai-iOS" */;
+			buildConfigurationList = A1B2C3CB1A2B3C4D5E6F7880 /* Build configuration list for PBXProject "Calemai" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -215,7 +215,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1B2C3CF1A2B3C4D5E6F7880 /* Todomai-iOS */,
+				A1B2C3CF1A2B3C4D5E6F7880 /* Calemai */,
 			);
 		};
 /* End PBXProject section */
@@ -253,7 +253,7 @@
 				A1B2C3E21A2B3C4D5E6F789E /* Styles.swift in Sources */,
 				A1B2C3E31A2B3C4D5E6F789F /* TaskTemplate.swift in Sources */,
 				A1B2C3E41A2B3C4D5E6F78A0 /* TestDataManager.swift in Sources */,
-				A1B2C3F01A2B3C4D5E6F78A5 /* TodomaiSidebar.swift in Sources */,
+				A1B2C3F01A2B3C4D5E6F78A5 /* CalemaiSidebar.swift in Sources */,
 				A1B2C3F11A2B3C4D5E6F78A6 /* RoutinesView.swift in Sources */,
 				A1B2C3F31A2B3C4D5E6F78A8 /* RadioView.swift in Sources */,
 				A1B2C3F51A2B3C4D5E6F78AA /* StationDownloadManager.swift in Sources */,
@@ -403,15 +403,18 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewii.Todomai-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewii.Calemai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -432,15 +435,18 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewii.Todomai-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jadewii.Calemai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -448,7 +454,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1B2C3CB1A2B3C4D5E6F7880 /* Build configuration list for PBXProject "Todomai-iOS" */ = {
+		A1B2C3CB1A2B3C4D5E6F7880 /* Build configuration list for PBXProject "Calemai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1B2C3E71A2B3C4D5E6F7880 /* Debug */,
@@ -457,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1B2C3E91A2B3C4D5E6F7890 /* Build configuration list for PBXNativeTarget "Todomai-iOS" */ = {
+		A1B2C3E91A2B3C4D5E6F7890 /* Build configuration list for PBXNativeTarget "Calemai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1B2C3EA1A2B3C4D5E6F7890 /* Debug */,

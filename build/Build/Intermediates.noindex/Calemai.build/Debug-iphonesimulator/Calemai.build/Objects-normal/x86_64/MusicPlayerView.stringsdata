@@ -1,0 +1,32 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/MusicPlayerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "BACK",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 196
+        }
+      },
+      {
+        "comment": "",
+        "key": "BACK",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld of %lld songs",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 249
+        }
+      }
+    ]
+  },
+  "version": 1
+}

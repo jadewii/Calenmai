@@ -1,0 +1,24 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/ContentView_Adaptive.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "SELECT A VIEW",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 228
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select an item from the sidebar",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 344
+        }
+      }
+    ]
+  },
+  "version": 1
+}
