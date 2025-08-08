@@ -11,6 +11,7 @@ struct DayScheduleView: View {
     @EnvironmentObject var taskStore: TaskStore
     @State private var dayStartHour: Int = 5 // 5:00 AM default
     @State private var dayEndHour: Int = 24 // 12:00 AM (midnight)
+    @State private var showMonthPicker = false
     
     // Use taskStore's selected calendar date for reactive updates
     var selectedDate: Date {
@@ -26,10 +27,22 @@ struct DayScheduleView: View {
             VStack(spacing: 0) {
                 // Header with current date - matching app style
                 VStack(spacing: 0) {
-                    Text(formatDate(selectedDate))
-                        .font(.system(size: 24, weight: .heavy))
-                        .foregroundColor(.gray)
-                        .padding(.top, 12)
+                    Button(action: {
+                        showMonthPicker.toggle()
+                        let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                        impactFeedback.impactOccurred()
+                    }) {
+                        HStack(spacing: 4) {
+                            Text(formatDate(selectedDate))
+                                .font(.system(size: 24, weight: .heavy))
+                                .foregroundColor(.gray)
+                            Image(systemName: showMonthPicker ? "chevron.up" : "chevron.down")
+                                .font(.system(size: 14, weight: .bold))
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .padding(.top, 12)
                     
                     // Navigation buttons - matching app style
                     HStack(spacing: 12) {
@@ -103,6 +116,57 @@ struct DayScheduleView: View {
                     }
                 )
                 
+                // Month picker dropdown
+                if showMonthPicker {
+                    ScrollView {
+                        VStack(spacing: 0) {
+                            ForEach(0..<12, id: \.self) { monthOffset in
+                                let calendar = Calendar.current
+                                let targetDate = calendar.date(byAdding: .month, value: monthOffset, to: Date()) ?? Date()
+                                Button(action: {
+                                    // Jump to first day of selected month
+                                    let components = calendar.dateComponents([.year, .month], from: targetDate)
+                                    if let firstOfMonth = calendar.date(from: components) {
+                                        taskStore.selectedCalendarDate = firstOfMonth
+                                        taskStore.calendarDisplayDate = firstOfMonth
+                                    }
+                                    showMonthPicker = false
+                                    let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                                    impactFeedback.impactOccurred()
+                                }) {
+                                    Text(formatMonthYear(targetDate).uppercased())
+                                        .font(.system(size: 18, weight: .bold))
+                                        .foregroundColor(calendar.isDate(targetDate, equalTo: selectedDate, toGranularity: .month) ? .white : .gray)
+                                        .frame(maxWidth: .infinity)
+                                        .padding(.vertical, 12)
+                                        .background(
+                                            calendar.isDate(targetDate, equalTo: selectedDate, toGranularity: .month) ?
+                                            taskStore.currentMode.modeButtonColor : Color.clear
+                                        )
+                                }
+                                .buttonStyle(PlainButtonStyle())
+                                
+                                if monthOffset < 11 {
+                                    Divider()
+                                        .background(Color.gray.opacity(0.3))
+                                }
+                            }
+                        }
+                        .padding(.vertical, 8)
+                    }
+                    .frame(maxHeight: 300)
+                    .background(
+                        ZStack {
+                            Color.white
+                            RoundedRectangle(cornerRadius: 12)
+                                .stroke(Color.gray, lineWidth: 2)
+                        }
+                    )
+                    .padding(.horizontal, 20)
+                    .transition(.opacity.combined(with: .move(edge: .top)))
+                    .zIndex(1)
+                }
+                
                 // Scrollable timeline with app styling
                 ScrollView {
                     VStack(spacing: 1) {
@@ -127,6 +191,12 @@ struct DayScheduleView: View {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE, MMMM d"
         return formatter.string(from: date).uppercased()
+    }
+    
+    private func formatMonthYear(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM yyyy"
+        return formatter.string(from: date)
     }
     
     private func previousDay() {

@@ -11,6 +11,7 @@ struct CalendarView: View {
     @State private var currentTab = "calendar"
     @State private var isInYearMode = false
     @State private var selectedDate: Date? = nil
+    @State private var showMonthPicker = false
     
     private var displayDate: Date {
         taskStore.calendarDisplayDate
@@ -42,6 +43,13 @@ struct CalendarView: View {
         case 12: return Color(red: 0.25, green: 0.75, blue: 0.4)  // December - Vibrant Green
         default: return .gray
         }
+    }
+    
+    // Helper function to format month and year
+    private func monthYearString(for date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM yyyy"
+        return formatter.string(from: date)
     }
     
     // Get darker shade of month color for date buttons (same as watchOS)
@@ -103,9 +111,21 @@ struct CalendarView: View {
                         
                         Spacer()
                         
-                        Text(dateFormatter.string(from: displayDate).uppercased())
-                            .font(.system(size: 26, weight: .black))
-                            .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
+                        Button(action: {
+                            showMonthPicker.toggle()
+                            let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                            impactFeedback.impactOccurred()
+                        }) {
+                            HStack(spacing: 4) {
+                                Text(dateFormatter.string(from: displayDate).uppercased())
+                                    .font(.system(size: 26, weight: .black))
+                                    .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
+                                Image(systemName: showMonthPicker ? "chevron.up" : "chevron.down")
+                                    .font(.system(size: 14, weight: .bold))
+                                    .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
+                            }
+                        }
+                        .buttonStyle(PlainButtonStyle())
                         
                         Spacer()
                         
@@ -122,6 +142,51 @@ struct CalendarView: View {
                     .padding(.horizontal, 10)
                     .padding(.vertical, 6)
                     
+                    // Month picker dropdown
+                    if showMonthPicker {
+                        ScrollView {
+                            VStack(spacing: 0) {
+                                ForEach(0..<12, id: \.self) { monthOffset in
+                                    let targetDate = calendar.date(byAdding: .month, value: monthOffset, to: Date()) ?? Date()
+                                    Button(action: {
+                                        taskStore.calendarDisplayDate = targetDate
+                                        showMonthPicker = false
+                                        let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                                        impactFeedback.impactOccurred()
+                                    }) {
+                                        Text(monthYearString(for: targetDate).uppercased())
+                                            .font(.system(size: 18, weight: .bold))
+                                            .foregroundColor(calendar.isDate(targetDate, equalTo: displayDate, toGranularity: .month) ? .white : .gray)
+                                            .frame(maxWidth: .infinity)
+                                            .padding(.vertical, 12)
+                                            .background(
+                                                calendar.isDate(targetDate, equalTo: displayDate, toGranularity: .month) ?
+                                                getMonthColor(for: targetDate) : Color.clear
+                                            )
+                                    }
+                                    .buttonStyle(PlainButtonStyle())
+                                    
+                                    if monthOffset < 11 {
+                                        Divider()
+                                            .background(Color.gray.opacity(0.3))
+                                    }
+                                }
+                            }
+                            .padding(.vertical, 8)
+                        }
+                        .frame(maxHeight: 300)
+                        .background(
+                            ZStack {
+                                Color.white
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(Color.gray, lineWidth: 2)
+                            }
+                        )
+                        .padding(.horizontal, 20)
+                        .transition(.opacity.combined(with: .move(edge: .top)))
+                        .zIndex(1)
+                    }
+                    
                     // Calendar grid fills maximum space
                     CalendarGridView(
                         currentDate: displayDate,
@@ -136,6 +201,12 @@ struct CalendarView: View {
             }
         }
         .navigationBarHidden(true)
+        .onTapGesture {
+            // Close month picker when tapping outside
+            if showMonthPicker {
+                showMonthPicker = false
+            }
+        }
         .gesture(
             DragGesture(minimumDistance: 50)
                 .onEnded { value in
