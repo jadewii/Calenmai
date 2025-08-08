@@ -20,7 +20,7 @@
       },
       {
         "comment": "",
-        "key": "STATISTICS",
+        "key": "DAY SCHEDULE",
         "location": {
           "startingColumn": 38,
           "startingLine": 52
@@ -28,10 +28,50 @@
       },
       {
         "comment": "",
+        "key": "Day Starts:",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "5:00 AM",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Day Ends:",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "12:00 AM",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "STATISTICS",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
         "key": "ABOUT",
         "location": {
           "startingColumn": 38,
-          "startingLine": 71
+          "startingLine": 109
         }
       },
       {
@@ -39,7 +79,7 @@
         "key": "TODOMAI",
         "location": {
           "startingColumn": 42,
-          "startingLine": 77
+          "startingLine": 115
         }
       },
       {
@@ -47,7 +87,7 @@
         "key": "VERSION 1.0",
         "location": {
           "startingColumn": 42,
-          "startingLine": 80
+          "startingLine": 118
         }
       },
       {
@@ -55,7 +95,7 @@
         "key": "© 2025",
         "location": {
           "startingColumn": 42,
-          "startingLine": 83
+          "startingLine": 121
         }
       },
       {
@@ -63,7 +103,7 @@
         "key": "CLEAR COMPLETED TASKS",
         "location": {
           "startingColumn": 38,
-          "startingLine": 105
+          "startingLine": 143
         }
       },
       {
@@ -71,7 +111,7 @@
         "key": "← BACK",
         "location": {
           "startingColumn": 30,
-          "startingLine": 131
+          "startingLine": 169
         }
       }
     ]

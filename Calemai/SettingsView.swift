@@ -47,6 +47,44 @@ struct SettingsView: View {
                             }
                             .padding(.horizontal, 40)
                             
+                            // Day Schedule Settings
+                            VStack(spacing: 12) {
+                                Text("DAY SCHEDULE")
+                                    .font(.system(size: 18, weight: .heavy))
+                                    .foregroundColor(.black)
+                                    .padding(.top, 20)
+                                
+                                // Day start and end time pickers
+                                VStack(spacing: 12) {
+                                    HStack {
+                                        Text("Day Starts:")
+                                            .font(.system(size: 14, weight: .bold))
+                                        Spacer()
+                                        Text("5:00 AM")
+                                            .font(.system(size: 14, weight: .medium))
+                                            .foregroundColor(.gray)
+                                    }
+                                    
+                                    HStack {
+                                        Text("Day Ends:")
+                                            .font(.system(size: 14, weight: .bold))
+                                        Spacer()
+                                        Text("12:00 AM")
+                                            .font(.system(size: 14, weight: .medium))
+                                            .foregroundColor(.gray)
+                                    }
+                                }
+                                .padding()
+                                    .background(
+                                        ZStack {
+                                            Color.gray.opacity(0.1)
+                                            Rectangle()
+                                                .stroke(Color.black, lineWidth: 3)
+                                        }
+                                    )
+                            }
+                            .padding(.horizontal, 40)
+                            
                             // Statistics
                             VStack(spacing: 12) {
                                 Text("STATISTICS")

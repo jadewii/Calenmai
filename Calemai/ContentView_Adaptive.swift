@@ -164,9 +164,14 @@ struct ContentView_Adaptive: View {
             .ignoresSafeArea()
             
             HStack(spacing: 0) {
-                // Custom sidebar
-                CalemaiSidebar(taskStore: taskStore, currentTab: $currentTab)
+                // Hour-by-hour block schedule instead of buttons
+                DayScheduleView()
+                    .environmentObject(taskStore)
                     .frame(width: 320)
+                
+                // Sidebar with buttons - REMOVED
+                // CalemaiSidebar(taskStore: taskStore, currentTab: $currentTab)
+                //     .frame(width: 320)
                 
                 // Detail view - each view controls its own background
                 Group {

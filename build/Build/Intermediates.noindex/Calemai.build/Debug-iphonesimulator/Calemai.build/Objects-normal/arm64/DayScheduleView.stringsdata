@@ -1,0 +1,48 @@
+{
+  "source": "/Users/jade/Documents/xCode/Calemai/Calemai/DayScheduleView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Today",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "—",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Day Schedule",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 237
+        }
+      },
+      {
+        "comment": "",
+        "key": "Day Starts At",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 238
+        }
+      },
+      {
+        "comment": "",
+        "key": "Day Ends At",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 244
+        }
+      }
+    ]
+  },
+  "version": 1
+}

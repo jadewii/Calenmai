@@ -7,7 +7,7 @@
         "key": "SELECT A VIEW",
         "location": {
           "startingColumn": 38,
-          "startingLine": 228
+          "startingLine": 233
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "Select an item from the sidebar",
         "location": {
           "startingColumn": 18,
-          "startingLine": 344
+          "startingLine": 349
         }
       }
     ]

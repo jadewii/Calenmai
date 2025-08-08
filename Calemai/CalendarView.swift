@@ -89,11 +89,38 @@ struct CalendarView: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 0) {
-                    // Header with month/year - compact
-                    Text(dateFormatter.string(from: displayDate).uppercased())
-                        .font(.system(size: 26, weight: .black))
-                        .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
-                        .padding(.vertical, 6)
+                    // Header with month/year and navigation buttons
+                    HStack {
+                        // Previous month button
+                        Button(action: {
+                            taskStore.navigateToPreviousMonth()
+                        }) {
+                            Image(systemName: "chevron.left")
+                                .font(.system(size: 20, weight: .bold))
+                                .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
+                                .frame(width: 44, height: 44)
+                        }
+                        
+                        Spacer()
+                        
+                        Text(dateFormatter.string(from: displayDate).uppercased())
+                            .font(.system(size: 26, weight: .black))
+                            .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
+                        
+                        Spacer()
+                        
+                        // Next month button
+                        Button(action: {
+                            taskStore.navigateToNextMonth()
+                        }) {
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 20, weight: .bold))
+                                .foregroundColor(calendar.isDate(displayDate, equalTo: Date(), toGranularity: .month) ? .black : .white)
+                                .frame(width: 44, height: 44)
+                        }
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
                     
                     // Calendar grid fills maximum space
                     CalendarGridView(
