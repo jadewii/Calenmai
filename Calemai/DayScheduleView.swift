@@ -13,10 +13,9 @@ struct DayScheduleView: View {
     @State private var dayEndHour: Int = 24 // 12:00 AM (midnight)
     
     // Use taskStore's selected calendar date for reactive updates
-    private var selectedDate: Date {
+    var selectedDate: Date {
         taskStore.selectedCalendarDate
-    
-    private let hourHeight: CGFloat = 60
+    }
     
     var body: some View {
         ZStack {
@@ -166,7 +165,7 @@ struct TimeBlockView: View {
     @ObservedObject var taskStore: TaskStore
     let selectedDate: Date
     
-    private var isCurrentHour: Bool {
+    var isCurrentHour: Bool {
         let calendar = Calendar.current
         let now = Date()
         return calendar.isDate(selectedDate, inSameDayAs: now) && calendar.component(.hour, from: now) == hour
@@ -227,7 +226,7 @@ struct TimeBlockView: View {
         )
     }
     
-    private func formatHour(_ hour: Int) -> String {
+    func formatHour(_ hour: Int) -> String {
         if hour == 0 || hour == 24 {
             return "12 AM"
         } else if hour < 12 {
@@ -303,7 +302,7 @@ struct TaskBlockView: View {
         )
     }
     
-    private func getTaskBackgroundColor() -> Color {
+    func getTaskBackgroundColor() -> Color {
         // Use mode colors with higher visibility
         switch task.mode {
         case "life":
@@ -317,7 +316,7 @@ struct TaskBlockView: View {
         }
     }
     
-    private func formatTime(_ date: Date) -> String {
+    func formatTime(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
         return formatter.string(from: date)
@@ -345,7 +344,7 @@ struct DayScheduleSettings: View {
         }
     }
     
-    private func formatHour(_ hour: Int) -> String {
+    func formatHour(_ hour: Int) -> String {
         if hour == 0 || hour == 24 {
             return "12:00 AM"
         } else if hour < 12 {
@@ -356,9 +355,4 @@ struct DayScheduleSettings: View {
             return "\(hour - 12):00 PM"
         }
     }
-}
-
-#Preview {
-    DayScheduleView()
-        .environmentObject(TaskStore())
 }
