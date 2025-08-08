@@ -14,7 +14,7 @@ struct DayScheduleView: View {
     
     // Use taskStore's selected calendar date for reactive updates
     var selectedDate: Date {
-        taskStore.selectedCalendarDate
+        taskStore.selectedCalendarDate ?? Date()
     }
     
     var body: some View {
@@ -53,7 +53,11 @@ struct DayScheduleView: View {
                         }
                         .buttonStyle(PlainButtonStyle())
                         
-                        Button(action: { taskStore.selectedCalendarDate = Date() }) {
+                        Button(action: { 
+                            taskStore.selectedCalendarDate = Date()
+                            let impactFeedback = UIImpactFeedbackGenerator(style: .light)
+                            impactFeedback.impactOccurred()
+                        }) {
                             Text("TODAY")
                                 .font(.system(size: 14, weight: .heavy))
                                 .foregroundColor(.white)
