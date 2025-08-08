@@ -177,9 +177,9 @@ struct TimeBlockView: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 0) {
-            // Time label with heavy font
+            // Time label with regular font
             Text(formatHour(hour))
-                .font(.system(size: 16, weight: .heavy))
+                .font(.system(size: 14, weight: .regular))
                 .foregroundColor(isCurrentHour ? taskStore.currentMode.modeButtonColor : .gray)
                 .frame(width: 70, alignment: .trailing)
                 .padding(.trailing, 8)
